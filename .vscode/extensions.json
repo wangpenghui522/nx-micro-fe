@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+    "whtouche.vscode-js-console-utils",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "sdras.vue-vscode-snippets"
+  ]
+}

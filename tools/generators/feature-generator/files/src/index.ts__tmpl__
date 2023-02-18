@@ -1,0 +1,5 @@
+import <%= name.slice(8).replace(/-(\w)/g, (match, p1) => p1.toUpperCase()) %>Router from './router';
+
+export {
+  <%= name.slice(8).replace(/-(\w)/g, (match, p1) => p1.toUpperCase()) %>Router,
+};

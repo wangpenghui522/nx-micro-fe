@@ -1,0 +1,19 @@
+import request from '@shared/utils/http-client/chat-request';
+
+// get请求示例
+export const getXXX = () => {
+  const apiConfig: Apis.IApiProps = {
+    url: `/xxx/xxx`,
+    method: 'GET',
+  };
+  return request(apiConfig, {}, { isLoading: true });
+};
+
+// post请求示例
+export const updateXXX = (params: Apis.IReqParams) => {
+  const apiConfig: Apis.IApiProps = {
+    url: `/xxx/xxx`,
+    method: 'POST',
+  };
+  return request(apiConfig, params, { isLoading: true });
+};

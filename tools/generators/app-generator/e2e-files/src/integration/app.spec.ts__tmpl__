@@ -1,0 +1,6 @@
+describe('<%= name %>', () => {
+  it('should display demo message', () => {
+    cy.visit('/caizhi-<%= name %>/mylib/demo');
+    cy.contains('h1', 'feature-mylib demo');
+  });
+});

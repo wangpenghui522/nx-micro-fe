@@ -1,0 +1,23 @@
+{
+  "root": "libs/feature-error",
+  "projectType": "library",
+  "sourceRoot": "libs/feature-error/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/feature-error/**/*.{ts,tsx,vue}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-error"],
+      "options": {
+        "jestConfig": "libs/feature-error/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

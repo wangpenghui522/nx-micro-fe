@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "projects": {
+    "app1": "apps/app1",
+    "app1-e2e": "apps/app1-e2e",
+    "app2": "apps/app2",
+    "app2-e2e": "apps/app2-e2e",
+    "feature-app1": "libs/feature-app1",
+    "feature-app2": "libs/feature-app2"
+  }
+}

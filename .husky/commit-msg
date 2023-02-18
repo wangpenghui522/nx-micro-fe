@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 提交记录检查
+yarn commitlint --edit $1
+
+# 格式化检查
+yarn affected:format:check
+
+# eslint检查
+#yarn affected:lint

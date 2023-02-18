@@ -1,0 +1,14 @@
+<template>
+  <PageContainer></PageContainer>
+</template>
+
+<script setup lang="ts">
+  import { ref, reactive, toRefs, watch, computed, onMounted } from 'vue';
+  import { Form, Table } from 'ant-design-vue';
+  import { PageContainer } from '@shared/components';
+
+  import { xxxApi } from '@feature-#featureName#/apis';
+  import { xxx } from '@shared/utils';
+</script>
+
+<style lang="less" scoped></style>

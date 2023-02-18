@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "api-generator",
+  "type": "object",
+  "properties": {
+    "featureName": {
+      "type": "string",
+      "description": "Depend on feature name",
+      "x-prompt": "请输入从属于的特性应用名："
+    },
+    "apiFileName": {
+      "type": "string",
+      "description": "api file name",
+      "pattern": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "请输入api文件名称："
+    },
+    "apiComment": {
+      "type": "string",
+      "description": "api comment",
+      "pattern": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "请输入api的注释："
+    }
+  },
+  "required": [
+    "apiFileName",
+    "featureName",
+    "apiComment"
+  ]
+}

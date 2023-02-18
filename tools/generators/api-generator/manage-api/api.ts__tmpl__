@@ -1,0 +1,10 @@
+import { httpClient } from '@shared/utils';
+import { type ApiResult } from '../apis.d';
+
+// get请求示例
+export const getXXXList = async <T, U>(params: T | any): Promise<ApiResult<U>> =>
+  await httpClient.get(`/xxx/xxx`, { params });
+
+// post请求示例
+export const updateXXX = async <T, U>(params: T | any): Promise<ApiResult<U>> =>
+  await httpClient.post(`/xxx/xxx`, params);

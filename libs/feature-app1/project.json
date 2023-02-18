@@ -1,0 +1,23 @@
+{
+  "root": "libs/feature-app1",
+  "projectType": "library",
+  "sourceRoot": "libs/feature-app1/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/feature-app1/**/*.{ts,tsx,vue}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/feature-app1"],
+      "options": {
+        "jestConfig": "libs/feature-app1/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["type:feature", "name:feature-app1"]
+}

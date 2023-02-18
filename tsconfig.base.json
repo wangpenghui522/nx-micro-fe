@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@feature-app1/*": ["./libs/feature-app1/src/*"],
+      "@feature-app2/*": ["./libs/feature-app2/src/*"],
+      "@feature-chat/*": ["./libs/feature-chat/src/*"],
+      "@feature-error/*": ["./libs/feature-error/src/*"],
+      "@feature-manage/*": ["./libs/feature-manage/src/*"],
+      "@shared/*": ["./libs/shared/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
